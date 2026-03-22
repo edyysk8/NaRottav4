@@ -1,0 +1,17 @@
+{
+  "name": "narotta-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/backend",
+    "apps/admin",
+    "apps/mobile"
+  ],
+  "scripts": {
+    "dev:backend": "npm --workspace apps/backend run dev",
+    "dev:admin": "npm --workspace apps/admin run dev",
+    "dev:mobile": "npm --workspace apps/mobile run start",
+    "build:backend": "npm --workspace apps/backend run build",
+    "build:admin": "npm --workspace apps/admin run build"
+  }
+}
